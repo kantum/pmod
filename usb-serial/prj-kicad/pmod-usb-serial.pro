@@ -1,6 +1,6 @@
-update=mer. 06 sept. 2017 13:26:44 CEST
+update=Tue 26 Feb 2019 11:56:32 AM CET
 version=1
-last_client=kicad
+last_client=eeschema
 [pcbnew]
 version=1
 LastNetListRead=
@@ -28,5 +28,3 @@ version=1
 [eeschema]
 version=1
 LibDir=
-[eeschema/libraries]
-LibName1=pmod-usb-serial

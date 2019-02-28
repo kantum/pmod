@@ -1,0 +1,5 @@
+(sym_lib_table
+  (lib (name pmod-usb-serial)(type Legacy)(uri ${KIPRJMOD}/pmod-usb-serial.lib)(options "")(descr ""))
+  (lib (name pmod-logic-lp384)(type Legacy)(uri /home/kantum/Depots/pmod/logic-lp384/prj-kicad/pmod-logic-lp384.lib)(options "")(descr ""))
+  (lib (name pmod-usb-serial-rescue)(type Legacy)(uri ${KIPRJMOD}/pmod-usb-serial-rescue.lib)(options "")(descr ""))
+)

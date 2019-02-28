@@ -467,7 +467,7 @@ CP21_TXD
 Text GLabel 5900 3400 2    50   Input ~ 0
 CP21_RXD
 $Comp
-L pmod-usb-serial:TXS0104 U2
+L pmod-usb-serial-rescue:TXS0104-pmod-usb-serial U2
 U 1 1 5C760AD3
 P 5250 3200
 F 0 "U2" H 5250 3250 50  0000 C CNN

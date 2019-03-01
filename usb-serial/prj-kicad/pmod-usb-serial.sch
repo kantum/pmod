@@ -28,42 +28,15 @@ $EndComp
 $Comp
 L pmod-usb-serial:CONN_MiniUSB-AB P2
 U 1 1 59B14149
-P 9400 3200
-F 0 "P2" H 9400 3500 50  0000 C CNN
-F 1 "CONN_MiniUSB-AB" V 9200 3200 45  0000 C CNN
-F 2 "pmod-usb-serial:CONN_65100516121" H 9400 3200 60  0001 C CNN
-F 3 "" H 9400 3200 60  0000 C CNN
-	1    9400 3200
+P 9600 3200
+F 0 "P2" H 9600 3500 50  0000 C CNN
+F 1 "CONN_MiniUSB-AB" V 9400 3200 45  0000 C CNN
+F 2 "pmod-usb-serial:CONN_65100516121" H 9600 3200 60  0001 C CNN
+F 3 "" H 9600 3200 60  0000 C CNN
+	1    9600 3200
 	-1   0    0    -1  
 $EndComp
-$Comp
-L pmod-usb-serial:CP2104 U1
-U 1 1 59B14239
-P 7700 3400
-F 0 "U1" H 7700 3600 60  0000 C CNN
-F 1 "CP2104" H 7350 4200 60  0000 C CNN
-F 2 "pmod-usb-serial:QFN24" H 7700 3200 60  0001 C CNN
-F 3 "" H 7700 3200 60  0000 C CNN
-	1    7700 3400
-	-1   0    0    -1  
-$EndComp
-Wire Wire Line
-	8250 3100 8550 3100
-Wire Wire Line
-	8550 3100 8650 3200
-Wire Wire Line
-	8650 3200 9100 3200
-Wire Wire Line
-	8250 3200 8550 3200
-Wire Wire Line
-	8550 3200 8650 3100
-Wire Wire Line
-	8650 3100 9100 3100
-Wire Wire Line
-	9000 3500 9000 3400
-Wire Wire Line
-	9000 3400 9100 3400
-NoConn ~ 9150 3300
+NoConn ~ 9350 3300
 $Comp
 L pmod-usb-serial:VCC #PWR01
 U 1 1 59B144D4
@@ -108,17 +81,6 @@ NoConn ~ 7150 3250
 NoConn ~ 7150 3350
 NoConn ~ 7150 3450
 $Comp
-L pmod-usb-serial:GND #PWR03
-U 1 1 59B1460D
-P 9000 3500
-F 0 "#PWR03" H 9000 3500 30  0001 C CNN
-F 1 "GND" H 9000 3430 30  0001 C CNN
-F 2 "" H 9000 3500 60  0000 C CNN
-F 3 "" H 9000 3500 60  0000 C CNN
-	1    9000 3500
-	1    0    0    -1  
-$EndComp
-$Comp
 L pmod-usb-serial:GND #PWR04
 U 1 1 59B1462D
 P 7700 4300
@@ -149,8 +111,6 @@ Wire Wire Line
 Wire Wire Line
 	7600 2500 7600 2550
 Connection ~ 7700 2500
-Wire Wire Line
-	7800 2500 7800 2550
 NoConn ~ 8250 3500
 NoConn ~ 8250 3600
 $Comp
@@ -296,58 +256,6 @@ Wire Wire Line
 Wire Wire Line
 	7350 4600 7250 4600
 $Comp
-L pmod-usb-serial:R R3
-U 1 1 59B6F296
-P 8600 2900
-F 0 "R3" V 8700 2900 50  0000 C CNN
-F 1 "R" V 8600 2900 50  0000 C CNN
-F 2 "pmod-usb-serial:SMD0603" H 8600 2900 60  0001 C CNN
-F 3 "" H 8600 2900 60  0000 C CNN
-	1    8600 2900
-	0    1    1    0   
-$EndComp
-$Comp
-L pmod-usb-serial:R R2
-U 1 1 59B6F2CB
-P 8600 2700
-F 0 "R2" V 8700 2700 50  0000 C CNN
-F 1 "R" V 8600 2700 50  0000 C CNN
-F 2 "pmod-usb-serial:SMD0603" H 8600 2700 60  0001 C CNN
-F 3 "" H 8600 2700 60  0000 C CNN
-	1    8600 2700
-	0    -1   -1   0   
-$EndComp
-$Comp
-L pmod-usb-serial:GND #PWR013
-U 1 1 59B6F338
-P 8900 2950
-F 0 "#PWR013" H 8900 2950 30  0001 C CNN
-F 1 "GND" H 8900 2880 30  0001 C CNN
-F 2 "" H 8900 2950 60  0000 C CNN
-F 3 "" H 8900 2950 60  0000 C CNN
-	1    8900 2950
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	8300 2900 8350 2900
-Wire Wire Line
-	8300 2700 8300 2800
-Wire Wire Line
-	8300 2800 8250 2800
-Wire Wire Line
-	8300 2700 8350 2700
-Connection ~ 8300 2800
-Wire Wire Line
-	8850 2900 8900 2900
-Wire Wire Line
-	8900 2900 8900 2950
-Wire Wire Line
-	8850 2700 9000 2700
-Wire Wire Line
-	9000 2700 9000 3000
-Wire Wire Line
-	9000 3000 9100 3000
-$Comp
 L pmod-usb-serial:CONN_1 TP1
 U 1 1 59B6F9A1
 P 6900 3700
@@ -445,11 +353,7 @@ Wire Wire Line
 Wire Wire Line
 	7700 2500 7700 2550
 Wire Wire Line
-	7700 2500 7800 2500
-Wire Wire Line
 	9250 4050 9250 4100
-Wire Wire Line
-	8300 2800 8300 2900
 Text GLabel 7150 2800 0    50   Input ~ 0
 CP21_CTS
 Text GLabel 7150 2900 0    50   Input ~ 0
@@ -466,17 +370,6 @@ Text GLabel 5900 3300 2    50   Input ~ 0
 CP21_TXD
 Text GLabel 5900 3400 2    50   Input ~ 0
 CP21_RXD
-$Comp
-L pmod-usb-serial:TXS0104 U2
-U 1 1 5C760AD3
-P 5250 3200
-F 0 "U2" H 5250 3250 50  0000 C CNN
-F 1 "TXS0104" H 4850 2700 50  0000 C CNN
-F 2 "pmod-usb-serial:QFN14" H 5250 3200 50  0001 C CNN
-F 3 "" H 5250 3200 50  0001 C CNN
-	1    5250 3200
-	-1   0    0    -1  
-$EndComp
 Wire Wire Line
 	5900 3100 5800 3100
 Wire Wire Line
@@ -656,10 +549,10 @@ Connection ~ 9250 4550
 NoConn ~ 2800 2800
 NoConn ~ 2800 2900
 $Comp
-L pmod-usb-serial:GND #PWR?
+L pmod-usb-serial:GND #PWR0110
 U 1 1 5C776927
 P 5250 3850
-F 0 "#PWR?" H 5250 3850 30  0001 C CNN
+F 0 "#PWR0110" H 5250 3850 30  0001 C CNN
 F 1 "GND" H 5250 3780 30  0001 C CNN
 F 2 "" H 5250 3850 60  0000 C CNN
 F 3 "" H 5250 3850 60  0000 C CNN
@@ -668,4 +561,91 @@ F 3 "" H 5250 3850 60  0000 C CNN
 $EndComp
 Wire Wire Line
 	5250 3850 5250 3750
+$Comp
+L pmod-usb-serial:CP2104 U1
+U 1 1 59B14239
+P 7700 3400
+F 0 "U1" H 7700 3600 60  0000 C CNN
+F 1 "CP2104" H 7350 4200 60  0000 C CNN
+F 2 "pmod-usb-serial:QFN24" H 7700 3200 60  0001 C CNN
+F 3 "" H 7700 3200 60  0000 C CNN
+	1    7700 3400
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	7800 2550 7800 2500
+$Comp
+L pmod-usb-serial:TXS0104 U2
+U 1 1 5C797456
+P 5250 3200
+F 0 "U2" H 5250 3978 50  0000 C CNN
+F 1 "TXS0104" H 5250 3887 50  0000 C CNN
+F 2 "pmod-usb-serial:QFN14" H 5250 3200 50  0001 C CNN
+F 3 "" H 5250 3200 50  0001 C CNN
+	1    5250 3200
+	-1   0    0    -1  
+$EndComp
+$Comp
+L pmod-usb-serial:USBLC6-2 U3
+U 1 1 5C797CAC
+P 8750 3150
+F 0 "U3" H 8750 3150 60  0000 C CNN
+F 1 "USBLC6-2" H 9000 2900 60  0000 C CNN
+F 2 "pmod-usb-serial:SOT23-6" H 8750 3150 60  0001 C CNN
+F 3 "" H 8750 3150 60  0000 C CNN
+	1    8750 3150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9300 2500 9300 2800
+Connection ~ 9300 2800
+Wire Wire Line
+	9300 2800 9300 3000
+Wire Wire Line
+	7800 2500 9300 2500
+Wire Wire Line
+	8250 2800 8750 2800
+Wire Wire Line
+	9050 3050 9300 3200
+Wire Wire Line
+	9300 3100 9050 3250
+$Comp
+L pmod-usb-serial:GND #PWR0111
+U 1 1 5C7D693B
+P 9050 3550
+F 0 "#PWR0111" H 9050 3550 30  0001 C CNN
+F 1 "GND" H 9050 3480 30  0001 C CNN
+F 2 "" H 9050 3550 60  0000 C CNN
+F 3 "" H 9050 3550 60  0000 C CNN
+	1    9050 3550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8250 3100 8350 3100
+Wire Wire Line
+	8350 3100 8350 3050
+Wire Wire Line
+	8350 3050 8450 3050
+Wire Wire Line
+	8250 3200 8350 3200
+Wire Wire Line
+	8350 3200 8350 3250
+Wire Wire Line
+	8350 3250 8450 3250
+Wire Wire Line
+	8750 2850 8750 2800
+Connection ~ 8750 2800
+Wire Wire Line
+	8750 2800 9300 2800
+Wire Wire Line
+	8750 3450 8750 3500
+Wire Wire Line
+	8750 3500 9050 3500
+Wire Wire Line
+	9300 3400 9300 3500
+Wire Wire Line
+	9050 3500 9050 3550
+Connection ~ 9050 3500
+Wire Wire Line
+	9050 3500 9300 3500
 $EndSCHEMATC

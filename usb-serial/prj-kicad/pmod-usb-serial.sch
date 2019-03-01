@@ -605,10 +605,6 @@ Wire Wire Line
 	7800 2500 9300 2500
 Wire Wire Line
 	8250 2800 8750 2800
-Wire Wire Line
-	9050 3050 9300 3200
-Wire Wire Line
-	9300 3100 9050 3250
 $Comp
 L pmod-usb-serial:GND #PWR0111
 U 1 1 5C7D693B
@@ -648,4 +644,16 @@ Wire Wire Line
 Connection ~ 9050 3500
 Wire Wire Line
 	9050 3500 9300 3500
+Wire Wire Line
+	9150 3100 9150 3050
+Wire Wire Line
+	9150 3050 9050 3050
+Wire Wire Line
+	9150 3200 9150 3250
+Wire Wire Line
+	9150 3250 9050 3250
+Wire Wire Line
+	9150 3100 9300 3100
+Wire Wire Line
+	9300 3200 9150 3200
 $EndSCHEMATC
